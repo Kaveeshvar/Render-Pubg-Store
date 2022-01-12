@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .header {
+    display: block;
+    background-color: grey;
+    color: black;
+    padding: 15px;
+    
+    font-size: 30px;
+  }
+  .header .brand{
+    float:left;
+    font-size: xx-large;
+  }
+  .header img{
+      
+	  
+      float:left;
+      margin: 0px 15px 0px 0px;
+        width: 65px;
+        height: 67px;
+        background: #555;
+  }
+  /* Add a black background color to the top navigation */
+.topnav {
+  float:right;
+  background-color: #eee;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: grey;
+  
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+  /* For desktop: */
+
+  @media only screen and (min-width: 750px) {
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33%;
+      padding: 75px;
+      height: 300px;
+     
+    }
+    
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  .thumbnail{
+    float:inherit;
+    padding:4px;
+    margin-bottom:20px;
+    -height:1.42857143;
+    background-color:#fff;
+    border:1px solid #ddd;
+    border-radius:4px;
+    text-align: center;
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .thumbnail:hover, .thumbnail:focus, .thumbnail:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    border:1px solid black;
+  }
+    
+    .thumbnail a>img,.thumbnail>img{
+      margin-right:auto;
+      margin-left:auto;
+      text-align: center;
+    }
+      
+      a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover{
+        border-color:#337ab7
+      }
+      .thumbnail .caption{
+        padding:9px;color:#333
+      }
+      .thumbnail>img{
+        display:block;
+        max-width:100%;
+        height:auto}
+
+      .jumbotron{
+        padding-top:1px;
+        padding-bottom:1px;
+        margin-bottom:1px;
+        color:inherit;
+        background-color:#eee;
+        text-align: center;
+        
+      }
+      .jumbotron .h1,.jumbotron h1{
+        color:inherit;
+        margin-bottom:1px;
+        margin-top:1px;
+      }
+      .jumbotron p{
+        margin-bottom:1px;
+        font-size:21px;
+        font-weight:200;
+      }
+      .jumbotron>hr{
+        border-top-color:#d5d5d5
+      }
+      .container .jumbotron,.container-fluid .jumbotron{
+        padding-right:15px;
+        padding-left:15px;
+        border-radius:6px}
+        .jumbotron .container{
+          max-width:100%
+        }
+        @media screen and (min-width:768px)
+        {
+          .jumbotron{
+            padding-top:48px;
+            -bottom:48px
+        }
+        .container .jumbotron,.container-fluid .jumbotron{
+          padding-right:60px;padding-left:60px}
+          .jumbotron .h1,.jumbotron h1{font-size:63px}}
+
+         .ss{
+             float:center;
+             height: 35px;
+             width: 35px;
+         }
+          
+          

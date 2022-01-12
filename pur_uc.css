@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.header {
+    display: block;
+    background-color: grey;
+    color: black;
+    padding: 15px;
+
+    font-size: 30px;
+}
+
+.header .brand {
+    float: left;
+    font-size: xx-large;
+}
+
+.header img {
+
+
+    float: left;
+    margin: 0px 15px 0px 0px;
+    width: 65px;
+    height: 67px;
+    background: #555;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    float: right;
+    background-color: #eee;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: grey;
+
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: grey;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+/* For desktop: */
+
+.jumbotron {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    color: inherit;
+    background-color: #eee;
+    text-align: center;
+
+}
+
+.jumbotron .h1, .jumbotron h1 {
+    color: inherit;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.jumbotron p {
+    margin-bottom: 1px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.jumbotron>hr {
+    border-top-color: #d5d5d5
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px
+}
+
+.jumbotron .container {
+    max-width: 100%
+}
+
+.title{
+    color: blue;
+    font-size:xx-large;
+}
+.form{
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px) {
+    .jumbotron {
+        padding-top: 48px;
+        -bottom: 48px
+    }
+
+    .container .jumbotron, .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px
+    }
+
+    .jumbotron .h1, .jumbotron h1 {
+        font-size: 63px
+    }
+}
+
+title{
+    color: blue;
+    font-size:50%;
+}
